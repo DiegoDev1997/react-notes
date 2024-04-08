@@ -7,7 +7,9 @@ import NovaAnotacao from "../pages/NovaAnotacao"
 import EditarAnotacao from "../pages/EditarAnotacao"
 
 
+
 export default function Routes(){
+          
     return <Router>
             <>
             <Route path="/" element={<Home />}/>

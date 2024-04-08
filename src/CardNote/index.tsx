@@ -1,3 +1,4 @@
+import {  useNavigate } from "react-router-dom";
 import Edite from "../assets/svgs/edite";
 import Trash from "../assets/svgs/trash";
 import { TNote } from "../types";
@@ -8,7 +9,7 @@ export type Props={
     note:TNote
 }
 export default function CardNote({note}:Props){
-
+    const navigate=useNavigate()
 
     const deleteNote=()=>{
         alert(note.id)
@@ -22,7 +23,7 @@ export default function CardNote({note}:Props){
          <p>{note.content}</p>
         </div>
         <div className="tools">
-            <Edite />
+            <span onClick={()=>navigate('/editaranotacao')}><Edite /></span>
            <span onClick={deleteNote}><Trash /></span>
         </div>
     </Box>
