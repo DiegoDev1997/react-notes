@@ -8,6 +8,11 @@ export type Props={
     note:TNote
 }
 export default function CardNote({note}:Props){
+
+
+    const deleteNote=()=>{
+        alert(note.id)
+    }
     return <Box>
         <div className="header-box">
             <h3>{note.title}</h3>
@@ -18,7 +23,7 @@ export default function CardNote({note}:Props){
         </div>
         <div className="tools">
             <Edite />
-            <Trash />
+           <span onClick={deleteNote}><Trash /></span>
         </div>
     </Box>
 }
