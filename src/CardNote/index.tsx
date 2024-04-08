@@ -3,6 +3,7 @@ import Edite from "../assets/svgs/edite";
 import Trash from "../assets/svgs/trash";
 import { TNote } from "../types";
 import { Box } from "./style";
+import { toast } from "react-toastify";
 
 
 export type Props={
@@ -12,7 +13,7 @@ export default function CardNote({note}:Props){
     const navigate=useNavigate()
 
     const deleteNote=()=>{
-        alert(note.id)
+        toast.success(' anotação deletada')
     }
     return <Box>
         <div className="header-box">

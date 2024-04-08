@@ -36,6 +36,10 @@ form{
     .inputs{
         display: flex;
        flex-direction: column;
+       p{
+        font-size: 12px;
+        color: red;
+       }
        input{
         padding: 22px;
         border-radius: 7px;

@@ -24,6 +24,10 @@ form{
         margin: 50px 0;
         display: flex;
        flex-direction: column;
+       p{
+        font-size: 12px;
+        color: red;
+       }
        textarea{
         resize: none;
         height: 400px;

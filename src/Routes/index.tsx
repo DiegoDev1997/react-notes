@@ -18,7 +18,7 @@ export default function Routes(){
             <Route path="/editaranotacao" element={<EditarAnotacao />}/>
             <Route path="/entrar" element={<Login />}/>
             <Route path="/cadastro" element={<Cadastro/>}/>
-            
+           
             </>
 
       </Router>
