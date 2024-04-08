@@ -43,7 +43,7 @@ export default function Login(){
             <input className="in-focus" name="email" type="email" onChange={formik.handleChange} value={formik.values.email} />
             {formik.touched.email && <p>{formik.errors.email}</p>}
             <label htmlFor="">Senha</label>
-            <input name="password" onChange={formik.handleChange} value={formik.values.password} type="password" />
+            <input className="in-focus" name="password" onChange={formik.handleChange} value={formik.values.password} type="password" />
             {formik.touched.password && <p>{formik.errors.password}</p>}
             <input type="submit" />
         </div>
